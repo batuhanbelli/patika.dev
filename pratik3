@@ -1,0 +1,23 @@
+package Pratik;
+import java.util.Scanner;
+public class pratik3 {
+    public static void main(String[] args) {
+        int akenar, bkenar, ckenar;
+        double alan , u ;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("A Kenarınız Giriniz : ");
+        akenar = input.nextInt();
+
+        System.out.print("B Kenarını Giriniz : ");
+        bkenar = input.nextInt();
+
+        System.out.print("C Kenarını Giriniz : ");
+        ckenar = input.nextInt();
+
+         u = (akenar + bkenar + ckenar)/2;
+         alan = Math.sqrt (u * (u - akenar)*(u - bkenar)*(u - ckenar));
+
+        System.out.println("Üçgenin Alanı : " + alan);
+    }
+}
