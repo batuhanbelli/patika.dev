@@ -1,0 +1,25 @@
+package Pratik;
+import java.util.Scanner;
+public class pratik2 {
+    public static void main(String[] args) {
+        double anaPara, kdv, kdvli, kdv18=18, kdv8=8;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Paranızı Giriniz : ");
+        anaPara = input.nextDouble();
+
+        boolean kosul1 = anaPara >= 0;
+        boolean kosul2 = anaPara <= 1000;
+        boolean sonuc = kosul1 && kosul2;
+
+        System.out.println("Kdvsiz Fiyat : " + anaPara);
+        kdv = sonuc ? kdv18 : kdv8;
+        kdvli = anaPara + ((anaPara * kdv)/ 100);
+
+        System.out.println("KDV'li Fiyat :" + kdvli);
+        System.out.println("KDV tutarı :" + kdv/10);
+
+
+
+
+    }
