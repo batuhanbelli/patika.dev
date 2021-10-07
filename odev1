@@ -14,6 +14,6 @@ public class odev1 {
 
         boy2 = boy*boy;
         vucut = kilo/boy2;
-        System.out.print("Vucut Kitle İndeksiniz : " + vucut);
+        System.out.print("Vücut Kitle İndeksiniz : " + vucut);
     }
 }
