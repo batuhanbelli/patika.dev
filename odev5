@@ -1,0 +1,19 @@
+package Pratik;
+import java.util.Scanner;
+public class odev1 {
+    public static void main(String[] args) {
+        double kilo , boy ,vucut, boy2;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Kilonuzu Giriniz : ");
+        kilo = input.nextDouble();
+
+        System.out.print("Boyunuzu (Metre Cinsinden) Giriniz : ");
+        boy = input.nextDouble();
+
+        boy2 = boy*boy;
+        vucut = kilo/boy2;
+        System.out.print("Vucut Kitle İndeksiniz : " + vucut);
+    }
+}
