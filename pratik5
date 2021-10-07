@@ -1,0 +1,21 @@
+package Pratik;
+import java.util.Scanner;
+public class pratik5 {
+    public static void main(String[] args) {
+
+        int r , merkesacı;
+        double pi =3.14;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Dairenin Yarı Çapını Yazınız : ");
+        r = input.nextInt();
+
+        System.out.print("Merkez Açısını Yazınız : ");
+        merkesacı = input.nextInt();
+
+        double alan = (pi*(r*r)*merkesacı) / 360;
+        System.out.print("Daire Diliminin Alanı : " + alan);
+
+    }
+}
