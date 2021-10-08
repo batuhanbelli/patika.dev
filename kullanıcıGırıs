@@ -1,0 +1,40 @@
+package kosul;
+import java.util.Scanner;
+public class kullanıcıGiris {
+    public static void main(String[] args) {
+        String userName,password,onay,yeniSifre;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Kullanıcı Adınızı Giriniz : ");
+        userName = input.nextLine();
+
+        System.out.print("Şifrenizi Giriniz : ");
+        password = input.nextLine();
+
+        if (userName.equals("Batuhan") && password.equals("batuhan123")){
+            System.out.print("Giriş Yapıldı ");
+        }else {
+            System.out.println("Bilgileriniz Yanlış ");
+
+            System.out.print("Şifrenizi Sıfırlamak İstermisiniz ?\n EVET Veya HAYIR Yazınız : ");
+            onay = input.nextLine();
+
+            if (onay.equals("EVET")){
+
+                System.out.print("Yeni Şifreniz Önceki Şifreniz İle Aynı Olmaması Lazım.\nOluşturmak İstediğiniz Yeni Şifreyi Yazınız :  ");
+                yeniSifre = input.nextLine();
+                if (yeniSifre.equals("batuhan123")){
+                    System.out.print("Şifreniz Önceki İle Aynı");
+                }else {
+                    System.out.print("Şifreniz Değiştirildi");
+                }
+
+
+            }else if(onay.equals("HAYIR")){
+                System.out.print("Şifreniz Değiştirilmiyecektir");
+            }
+        }
+
+
+    }
+}
